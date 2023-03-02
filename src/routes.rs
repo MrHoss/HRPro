@@ -1,7 +1,7 @@
 use actix_web::{web, HttpResponse};
 
 async fn index() -> HttpResponse {
-    HttpResponse::Ok().body("Olá, mundo!")
+    HttpResponse::Ok().body("Hello World!")
 }
 
 // Define uma função que será usada como manipulador para a rota "/usuario/{id}"

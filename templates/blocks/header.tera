@@ -1,0 +1,61 @@
+{% extends "blocks/head.tera" %}
+    
+
+    {% block header%}
+        
+    <main class="main-container">
+        <div class="sidebar bg-dark">
+            <div id="title-header">
+                
+                <h6><a class="navbar-brand" href="/">{{translations.AppName}}</a> <span class="badge bg-secondary">v1.0.0</span></h6>
+            </div>
+            <ul class="nav flex-column">
+                <li id="new-order" class="nav-item"><a class="nav-link" href="/new-order"><i class="material-icons-round">
+                    price_check
+                </i>{{translations.new_order}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="/cash-flow"><i class="material-icons-round">
+                    point_of_sale
+                </i>{{translations.cash_flow}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="/bills-to-pay"><i class="material-icons-round">
+                    payment
+                </i>{{translations.bills_to_pay}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="/bills-to-receive"><i class="material-icons-round">
+                    attach_money
+                </i>{{translations.bills_to_receive}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="/dashboard"><i class="material-icons-round">
+                    dashboard
+                </i>{{translations.dashboard}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="/reports"><i class="material-icons-round">
+                    analytics
+                </i>{{translations.reports}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="/customers"><i class="material-icons-round">
+                    contacts
+                </i>{{translations.customers}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="/users"><i class="material-icons-round">
+                    people
+                </i>{{translations.users}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="/company"><i class="material-icons-round">
+                    business
+                </i>{{translations.company}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="/suppliers"><i class="material-icons-round">
+                    local_shipping
+                </i>{{translations.suppliers}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="/company"><i class="material-icons-round">
+                    inventory_2
+                </i>{{translations.stock}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="/company"><i class="material-icons-round">
+                    emoji_objects
+                </i>{{translations.services}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="/integrations"><i class="material-icons-round">
+                    sync
+                </i>{{translations.integrations}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="/settings"><i class="material-icons-round">
+                    settings
+                </i>{{translations.settings}}</a></li>
+            </ul>
+          </div>
+          <div class="content-container">
+              {% block content%}{% endblock %}
+          </div>
+    </main>
+{% endblock %}

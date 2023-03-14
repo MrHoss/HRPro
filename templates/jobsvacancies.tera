@@ -1,4 +1,4 @@
-{% extends "base.tera" %}
+{% extends "blocks/header.tera" %}
 
 {% block content %}
 <div class="list-group">

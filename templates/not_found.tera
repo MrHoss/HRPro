@@ -1,0 +1,6 @@
+{% extends "blocks/header.tera" %}
+{% block content %}
+<h1>
+    {{translations.not_found}}
+</h1>
+{% endblock %}

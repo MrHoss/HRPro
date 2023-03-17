@@ -1,3 +1,5 @@
 pub mod connect;
-pub mod database;
-//mod models;
+pub mod dbcontrollers;
+
+pub use dbcontrollers::*;
+pub use connect::*;

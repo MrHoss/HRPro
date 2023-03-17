@@ -7,9 +7,6 @@
     <meta name="description" content="">
     <meta name="author" content="Daniel (MrHoss) Souza">
     <title>{{translations.AppName}} - {{title}}</title>
-    <link href="static/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-    <script src="static/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
     <!--Custom CSS-->
     <link href="static/res/css/style.css" rel="stylesheet" crossorigin="anonymous">

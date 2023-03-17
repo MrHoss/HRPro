@@ -7,6 +7,7 @@ mod languages;
 mod database;
 mod handlers;
 mod routes;
+static ADDRESS: &str = "localhost:8000";
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
@@ -14,7 +15,8 @@ async fn main() -> std::io::Result<()> {
     let db_pool = database::connect::establish_connection(&database_url);
 
     let tera = Tera::new("templates/**/*").unwrap();
-
+    
+    println!("Server started on http://{}",&ADDRESS);
     HttpServer::new(move || {
         App::new()
             .app_data(Data::new(tera.clone()))
@@ -24,9 +26,8 @@ async fn main() -> std::io::Result<()> {
             .configure(auth_routes)
             .configure(treat_routes)
             .configure(user_routes)
-
     })
-    .bind("127.0.0.1:8000")?
+    .bind(&ADDRESS)?
     .run()
     .await
 }

@@ -1,3 +1,4 @@
+
 .main-container{
   height:100vh;
   width:100vw;
@@ -5,6 +6,10 @@
   flex-wrap: wrap;
   flex-direction: column;
 }
+.form-floating>label {
+  left: 10px;
+}
+
 
 #title-header{
     padding: 10px;
@@ -12,7 +17,7 @@
 }
 .material-icons-round {
     vertical-align: middle;
-    margin-right: 5px; /* ajuste a margem à sua preferência */
+    margin:0;
   }
 
 .sidebar {
@@ -39,10 +44,17 @@
     width:calc(100vw - 200px);
     padding: 20px;
   }
-  .nav-link{
-    color:#ffffff;
+  .nav-pills .nav-link.active{
+    background-color:#4da6ee;
   }
-  .nav-link:hover{
+  .nav-item .nav-link{
+    color:#ffffff;
+    
+  }
+  .nav-item .nav-link i{
+    margin-right: 5px;
+  }
+  .nav-item .nav-link:hover{
     color:#4da6ee;
   }
   .nav-item{
@@ -52,8 +64,30 @@
   .nav-item:hover{
     background-color: #343541;
   }
+  #new-order{
+    box-shadow: #ffffff00 0px 0px 0px 1px inset, #b1b1b1e6 0px 0px 0px 0.5px;
+  }
   #new-order:hover{
-    background-color: transparent;
-    box-shadow: #ffffff00 0px 0px 0px 1px inset, #b1b1b1e6 0px 0px 0px 1px;
+    background-color: #3435415e;
+    
+  }
+  .table-container{
+    background-color: #ffffffcb;
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #c7c7c7;
+    height: 65vh;
+    overflow-y: scroll;
+  }
+  .cash-progress{
+    padding: 10px;
+  }
+  .add-product{
+    color:#198754;
+    cursor:pointer;
+  }
+  .remove-product{
+    color:#dc3545;
+    cursor:pointer;
   }
   

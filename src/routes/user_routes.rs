@@ -1,9 +1,9 @@
 use actix_web::{web};
-use crate::handlers::{users,index};
+use crate::handlers::*;
 
 pub fn user_routes(cfg: &mut web::ServiceConfig) {
     cfg
-        .route("/users", web::get().to(index::index))
-        .route("/users/{id}", web::get().to(users::users));
+        //.route("/user/{id}", web::get().to(users))
+        .route("/users/{id}", web::get().to(get_user_by_id));
 
 }

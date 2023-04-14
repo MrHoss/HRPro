@@ -3,7 +3,7 @@ use tera::{Tera,Context};
 use crate::languages::pt_br::pt_br;
 
 pub async fn index(tera: web::Data<Tera>) -> impl Responder {
-    let mut context = Context::new();
+    let mut context:Context = Context::new();
     context.insert("title", "Home");
     context.insert("header", "Hello World");
     context.insert("content", "Simple page");

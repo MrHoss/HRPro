@@ -1,3 +1,3 @@
-pub mod users;
+pub mod users_controller;
 
-pub use users::*;
+pub use users_controller::*;

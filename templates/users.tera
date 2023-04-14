@@ -1,0 +1,14 @@
+{% extends "blocks/header.tera" %}
+
+{% block content %}
+<h1>Usuários</h1>
+{% for user in users %}
+    <div>
+        <p>ID: {{ user.id }}</p>
+        <p>Nome: {{ user.name }}</p>
+        <p>Email: {{ user.email }}</p>
+    </div>
+{% endfor %}
+
+
+{% endblock %}

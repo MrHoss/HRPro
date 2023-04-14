@@ -1,6 +1,0 @@
-{% extends "blocks/header.tera" %}
-
-{% block content %}
-
-
-{% endblock %}
